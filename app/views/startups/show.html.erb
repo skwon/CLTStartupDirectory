@@ -1,0 +1,63 @@
+<div class="row">
+
+<section class="span12">  
+  <h2><%= @startup.company_name %></h2>
+</section>
+<br></br>
+<br></br>
+<p id="notice"><%= notice %></p>
+	<section class="span8">
+<p>
+  <h4>Description</h4>
+  <hr/>
+  <%= @startup.description %>
+</p>
+<br></br>
+<p>
+  <h4>Milestones</h4>
+  <hr/>
+  <%= @startup.milestones %>
+</p>
+<br></br>
+<p>
+  <h4>Funding</h4>
+   <hr/>
+  <%= @startup.funding %>
+</p>
+<br></br>
+<p>
+  <h4>Press</h4>
+  <hr/>
+  <%= @startup.press %>
+</p>
+	</section>
+	<section class="span4">
+<p>
+  <h4>Year founded:</h4>
+  <hr/>
+  <%= @startup.year_founded %>
+</p>
+<br></br>
+<p>
+  <h4>Category:</h4>
+  <hr/>
+  <%= @startup.category %>
+</p>
+<br></br>
+<p>
+  <h4>People:</h4>
+  <hr/>
+  <%= @startup.people %>
+</p>
+<br></br>
+<p>
+  <h4>Advisors:</h4>
+  <hr/>
+  <%= @startup.advisors %>
+</p>
+<br></br>
+	</section>
+</div>
+
+<%= link_to 'Edit', edit_startup_path(@startup) %> |
+<%= link_to 'Back', startups_path %>
