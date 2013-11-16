@@ -1,11 +1,10 @@
 <div class="row">
-
-<section class="span12">  
-  <h2><%= @startup.company_name %></h2>
+<p id="notice"><%= notice %></p>
+<section class="page-header">  
+  <img src="https://pbs.twimg.com/profile_images/3498375188/0a3073eb13c97d0f3aeadb75ffd87984.png" alt="Punch" class="img-circle">	
+  <h1><%= @startup.company_name %> <small><%= @startup.category%></small></h1> 
 </section>
 <br></br>
-<br></br>
-<p id="notice"><%= notice %></p>
 	<section class="span8">
 <p>
   <h4>Description</h4>
@@ -39,9 +38,6 @@
 </p>
 <br></br>
 <p>
-  <h4>Category:</h4>
-  <hr/>
-  <%= @startup.category %>
 </p>
 <br></br>
 <p>
